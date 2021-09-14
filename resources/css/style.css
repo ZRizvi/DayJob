@@ -1,0 +1,45 @@
+h1 {
+  font-family: Helvetica;
+  font-size: 40px;
+  color: black;
+  background-color: white;
+  opacity: 1;
+  text-align: center;
+}
+
+.header {
+  height: 100px;
+  width: 100%;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.column {
+  float: left;
+  width: 25%;
+  padding: 0px;
+}
+
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 25%;
+  height: 25%;
+  opacity: 0;
+  transition: 1s ease;
+}
+
+.hover:hover .overlay {
+  opacity: 1;
+}

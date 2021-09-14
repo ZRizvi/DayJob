@@ -1,0 +1,103 @@
+<!doctype html>
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Day Job</title>
+      <link href="resources/css/style.css" type="text/css" rel="stylesheet"/>
+  </head>
+  <body>
+
+<!-- Header -->
+
+<script language="javascript">
+  function changeImage(images, curr, img_id) {
+    
+    // Go back to the start
+    if  (images.length==curr) {
+        curr = 0;
+    }
+
+    // Actually changing the images
+    document.getElementById(img_id).src = images[curr];
+
+    // When you click again, make another change
+    document.getElementById(img_id).onclick = function () {
+        changeImage(images, curr+1, img_id)
+    }
+  }
+</script>
+
+<!-- Grid -->
+
+<div class="row">
+    <div class="column">
+        <img src="resources\images\1.gif" id="imgClickAndChange" onclick='changeImage(["resources/images/1.gif", 
+        "resources/images/2.gif", 
+        "resources/images/hammersickle.png"], 1,
+        "imgClickAndChange")' />
+    </div>
+   <div class="column">
+        <img src="resources\images\2.gif" id="imgClickAndChange1" onclick='changeImage(["list of images"], 1,
+        "imgClickAndChange2")' />
+   </div>
+   <div class="column">
+      <img src="resources\images\3.png" id="imgClickAndChange2" onclick='changeImage(["list of images"], 1,
+      "imgClickAndChange2")' />
+   </div>
+   <div class="column">
+      <img src="resources\images\4.png" id="imgClickAndChange3" onclick='changeImage(["list of images"], 1,
+      "imgClickAndChange3")' />
+   </div>
+   <div class="column">
+    <img src="resources\images\5.gif" id="imgClickAndChange4" onclick='changeImage(["list of images"], 1,
+    "imgClickAndChange4")' />
+   </div>
+   <div class="column"> 
+    <img src="resources\images\6.png" id="imgClickAndChange5" onclick='changeImage(["list of images"], 1,
+    "imgClickAndChange5")' />
+   </div>
+   <div class="column">
+     <img src="resources\images\7.gif" id="imgClickAndChange6" onclick='changeImage(["list of images"], 1,
+     "imgClickAndChange6")' />
+   </div>
+   <div class="column">
+    <img src="resources\images\8.gif" id="imgClickAndChange7" onclick='changeImage(["list of images"], 1,
+    "imgClickAndChange7")' />
+   </div>
+   <div class="column">
+    <img src="resources\images\9.gif" id="imgClickAndChange8" onclick='changeImage(["list of images"], 1,
+    "imgClickAndChange8")' />
+  </div>
+  <div class="column">
+    <img src="resources\images\10.png" id="imgClickAndChange9" onclick='changeImage(["list of images"], 1,
+    "imgClickAndChange9")' />
+  </div>
+  <div class="column">
+    <img src="resources\images\11.png" id="imgClickAndChange10" onclick='changeImage(["list of images"], 1,
+    "imgClickAndChange10")' />
+  </div>
+  <div class="column">
+    <img src="resources\images\12.gif" id="imgClickAndChange11" onclick='changeImage(["list of images"], 1,
+    "imgClickAndChange11")' />
+  </div>
+  <div class="column">
+    <img src="resources\images\13.gif" id="imgClickAndChange12" onclick='changeImage(["list of images"], 1,
+    "imgClickAndChange12")' />
+  </div>
+  <div class="column">
+    <img src="resources\images\14.png" id="imgClickAndChange13" onclick='changeImage(["list of images"], 1,
+    "imgClickAndChange13")' />
+  </div>
+  <div class="column">
+    <img src="resources\images\15.gif" id="imgClickAndChange14" onclick='changeImage(["list of images"], 1,
+    "imgClickAndChange14")' />
+  </div>
+  <div class="column">
+    <img src="resources\images\16.png" id="imgClickAndChange15" onclick='changeImage(["list of images"], 1,
+    "imgClickAndChange15")' />
+  </div>
+</div>
+
+  </body>
+</html>
